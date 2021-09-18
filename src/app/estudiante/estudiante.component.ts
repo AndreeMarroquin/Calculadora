@@ -12,7 +12,7 @@ export class EstudianteComponent implements OnInit {
   ngOnInit(): void {
     
   }
-  NombrePersona = "Rogoberto Andree Marroquin y Marroquin"
+  NombrePersona = "Rigoberto Andree Marroquin y Marroquin"
   Carnet = "0907-18-19627"
   Docente = "Ing. Carlos Hernández"
   Parcial = "Segundo Examen Parcial Desarrollo Web"
