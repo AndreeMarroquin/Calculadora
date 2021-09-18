@@ -10,8 +10,7 @@ export class OperacionComponent implements OnInit {
   cantidadone = 0;
   cantidadtwo = 0;
   resultado1 = 0;
-  Operacion = "Suma y Resta se realizan automaticamente al llenar los campos," +
-    " para Multiplicación y División debe presionar los botones";
+  Operacion = "Presionar los botones para realizar operaciones.";
   opracion1 = "Valores no agregados";
   opracion2 = "Valores no agregados";
 
