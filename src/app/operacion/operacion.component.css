@@ -1,0 +1,14 @@
+.color{
+    color: #b11b9073;
+  }
+  
+  .titulo{
+    color: rgba(255, 0, 106, 0.658);
+    font-size: 25px;
+    font-weight:bold;
+  }
+  
+  .Instruccion{
+    font-size: 12px;
+    color: rgb(248, 62, 223);
+  }

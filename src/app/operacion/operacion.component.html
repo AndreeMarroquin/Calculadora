@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>Calculadora</title>
+</head>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <app-estudiante></app-estudiante>
+        </div>
+        <div class="col">
+
+            <body>
+                <hr>
+                <h1 class="text-center titulo">Calculadora</h1>
+                <p class="text-center Instruccion">{{Operacion}}</p>
+                <hr>
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-2">
+                                <label for="cantidadone">Valor 1</label>
+                                <input [(ngModel)]="cantidadone" type="number" (input)="ingresar2($event)">
+                                <div class="row">
+                                    <p class="text-center Instruccion">{{opracion1}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <label for="cantidadtwo">Valor 2</label>
+                                <input [(ngModel)]="cantidadtwo" type="number" (input)="ingresar($event)">
+                                <div class="row">
+                                    <p class="text-center Instruccion">{{opracion2}}</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col"> </div>
+                        <br><br><br>
+                        <button (click)="multiplication()" class="btn btn-outline-danger"
+                            [disabled]="habilitar">Multiplicar </button>
+                        <button (click)="Divicion()" class="btn btn-outline-danger"
+                            [disabled]="habilitar">Divicion</button>
+                        <button (click)="Suma()" class="btn btn-outline-danger" [disabled]="habilitar">Sumar</button>
+                        <button (click)="Resta()" class="btn btn-outline-danger" [disabled]="habilitar">Restar</button>
+                        <button (click)="limpiar()" class="btn btn-outline-danger"
+                            [disabled]="habilitar">Limpiar</button>
+
+                    </div><br>
+
+                    <p style="text-align: center;" *ngIf="resultado1 >0">El Resultado de la Operación es:
+                        <strong>{{resultado1}}</strong>
+                    </p>
+
+                </div>
+
+            </body>
+
+
+        </div>
+    </div>
+
+</div>
+
+</html>
